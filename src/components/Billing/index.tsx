@@ -26,7 +26,7 @@ const Billing: React.FC = () => {
     useEffect(() => {
         const fetchBillingData = async () => {
             try {
-                const response = await fetch("http://localhost:7070/billings",{
+                const response = await fetch("https://healthcarebackendproject.onrender.com/billings",{
                     method: "GET",
           headers: {
             "Authorization": `Bearer ${Cookies.get("jwtToken")}`, // Add the Bearer token here

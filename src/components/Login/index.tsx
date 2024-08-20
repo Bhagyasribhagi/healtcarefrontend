@@ -51,7 +51,7 @@ const Login = () => {
             body: JSON.stringify(loginData)
         }
 
-        const response = await fetch("http://localhost:7070/login", options);
+        const response = await fetch("https://healthcarebackendproject.onrender.com/login", options);
        console.log(response)
         if (response.ok) {
             const jsonData = await response.json();

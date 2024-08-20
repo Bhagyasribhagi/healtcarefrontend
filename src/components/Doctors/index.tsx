@@ -32,7 +32,7 @@ const Doctors: React.FC = () => {
       try {
         const token = Cookies.get("jwtToken"); // Assuming you store the token under "jwtToken"
         console.log(token);
-        const response = await fetch("http://localhost:7070/doctors", {
+        const response = await fetch("https://healthcarebackendproject.onrender.com/doctors", {
           method: "GET",
           headers: {
             "Authorization": `Bearer ${token}`, // Add the Bearer token here

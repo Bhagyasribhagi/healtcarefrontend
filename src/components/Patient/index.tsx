@@ -30,7 +30,7 @@ const Patient: React.FC = () => {
 
     const fetchPatients = async () => {
         try {
-            const response = await fetch("http://localhost:7070/patients", {
+            const response = await fetch("https://healthcarebackendproject.onrender.com/patients", {
                 method: "GET",
                 headers: {
                     "Authorization": `Bearer ${token}`,
@@ -74,8 +74,8 @@ const Patient: React.FC = () => {
         try {
             const method = selectedPatient?.id ? 'PUT' : 'POST';
             const url = selectedPatient?.id
-                ? `http://localhost:7070/update_patient/${selectedPatient.id}`
-                : `http://localhost:7070/add_patient`;
+                ? `https://healthcarebackendproject.onrender.com/update_patient/${selectedPatient.id}`
+                : `https://healthcarebackendproject.onrender.com/add_patient`;
 
             const response = await fetch(url, {
                 method: method,
@@ -102,7 +102,7 @@ const Patient: React.FC = () => {
 
     const handleDeleteClick = async (patient: Patient) => {
         try {
-            const response = await fetch(`http://localhost:7070/patient/${patient.id}`, {
+            const response = await fetch(`https://healthcarebackendproject.onrender.com/patient/${patient.id}`, {
                 method: "DELETE",
                 headers: {
                     "Authorization": `Bearer ${token}`,

@@ -28,7 +28,7 @@ const DoctorPatient: React.FC = () => {
   useEffect(() => {
     const fetchDoctor = async () => {
       try {
-        const response = await fetch(`http://localhost:7070/doctor/${id}`, {
+        const response = await fetch(`https://healthcarebackendproject.onrender.com/doctor/${id}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${Cookies.get("jwtToken")}`,

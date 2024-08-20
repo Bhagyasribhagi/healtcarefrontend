@@ -38,7 +38,7 @@ const PatientMedicalRecord: React.FC = () => {
 
     const fetchPatientData = async () => {
         try {
-            const response = await fetch(`http://localhost:7070/patient/${id}`,{
+            const response = await fetch(`https://healthcarebackendproject.onrender.com/patient/${id}`,{
                 method: "GET",
           headers: {
             "Authorization": `Bearer ${Cookies.get("jwtToken")}`, // Add the Bearer token here

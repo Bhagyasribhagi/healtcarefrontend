@@ -34,7 +34,7 @@ const Appointments: React.FC = () => {
     useEffect(() => {
         const fetchAppointments = async () => {
             try {
-                const response = await fetch("http://localhost:7070/appointments",{
+                const response = await fetch("https://healthcarebackendproject.onrender.com/appointments",{
                     method:"GET",
                     headers:{
                         "Authorization":`Bearer ${token}`,

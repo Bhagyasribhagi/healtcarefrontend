@@ -48,7 +48,7 @@ class Signup extends Component {
     const userDetails = { admin_name, username, password };
     console.log(userDetails);
 
-    const url = "http://localhost:7070/register"; // Replace with your sign-up endpoint
+    const url = "https://healthcarebackendproject.onrender.com/register"; // Replace with your sign-up endpoint
     const options = {
       method: "POST",
       body: JSON.stringify(userDetails),
