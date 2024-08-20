@@ -1,0 +1,139 @@
+.appointment-bg {
+    background-image: radial-gradient(white,#e1c1c6);
+    width: 100vw;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+   
+}
+
+.app-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.table-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+}
+.appointment-title{
+    padding-top: 10px;
+    text-align: center;
+    color: #920404;
+    font-weight: bold;
+    font-style: initial;
+
+}
+
+.appointments-table {
+    width: 100%;
+   
+    border-collapse: collapse;
+    background-color: #ffffff;
+    min-width: 600px; /* Ensures the table doesn’t shrink too much */
+}
+.appointment-con{
+    padding: 10px;
+    margin: 20px;
+}
+
+.appointments-table th {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: left;
+    background-color: #4CAF50; /* Separate color for the table header */
+    color: white;
+    font-weight: bold;
+}
+
+.appointments-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    background-color: #333333; /* Color for the table body cells */
+    color: white;
+}
+
+.appointments-table tr:nth-child(even) {
+    background-color: #333333; /* Ensures even rows have the same background color */
+}
+
+.appointments-table tr:hover {
+    background-color: #555555; /* Slightly darker shade for hover effect */
+}
+.status-app{
+    color: #f11515 !important;
+}
+
+/* Responsive design */
+
+/* For large screens (desktops) */
+@media screen and (min-width: 1024px) {
+    .table-container {
+        height: 70vh; /* Occupies 70% of the viewport height */
+    }
+}
+
+/* For medium screens (tablets) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .table-container {
+        height: 60vh; /* Occupies 60% of the viewport height */
+    }
+    .appointments-table tr td{
+        font-size: 9px;
+        padding: 5px;
+    }
+}
+
+/* For small screens (mobile phones) */
+@media screen and (max-width: 767px) {
+    .table-container {
+        height: 50vh; /* Occupies 50% of the viewport height */
+        width: 100%;
+    }
+
+    
+
+    .table-wrapper {
+        overflow-x: scroll; /* Horizontal scrolling on small screens */
+    }
+    .appointments-table  td{
+        font-size: 5px;
+        padding: 5px;
+    }
+    .appointments-table  th{
+        font-size: 5px;
+        padding: 5px;
+    }
+}
+
+/* For extra small screens (very short viewport height) */
+@media screen and (max-height: 450px) {
+    .table-container {
+        height: 40vh; /* Adjust height for shorter screens */
+    }
+    .appointments-table tr th{
+        font-size: 2px;
+        padding: 0px;
+    }
+    .appointments-table tr td{
+        font-size: 5px;
+        padding: 0px;
+    }
+}

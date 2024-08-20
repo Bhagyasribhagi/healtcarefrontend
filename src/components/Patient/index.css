@@ -1,0 +1,159 @@
+/* General Background */
+.patient-bg {
+    min-height: 100vh;
+    background-size: cover;
+    background-image: radial-gradient(white,#df9ba5);
+    text-align: center;
+    /* overflow-x: auto; */
+    width: 100vw;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Slight transparency for background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 450px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.modal-content input {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    margin: 10px 5px;
+    padding: 12px 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.submit-pa {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.submit-pa:hover {
+    background-color: #0056b3;
+}
+
+.cancel-pa {
+    background-color: #dc3545;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-pa:hover {
+    background-color: #a71d2a;
+}
+
+.add-new-p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-p {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    color: #333;
+}
+
+/* Patient Cart Styles */
+.patient-cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: #a71d2a;
+}
+
+.patient-title {
+    font-size: 2rem;
+    color: #a71d2a;
+}
+
+.add-patient {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-patient:hover {
+    background-color: #218838;
+}
+
+/* Table Styles */
+.patient-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: rgb(234, 221, 221);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+   
+}
+
+.patient-table th, .patient-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.patient-table th {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.patient-table td {
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    font-size: 1rem;
+}
+
+.patient-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.patient-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.patient-table tr:last-child td {
+    border-bottom: none;
+}
+.edit-patient{
+    background-color: transparent;
+    color: black;
+}

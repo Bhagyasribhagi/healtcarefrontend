@@ -1,0 +1,98 @@
+.billing-bg {
+  background-color: #e3b8b8;
+
+  border-radius: 10px;
+
+  margin: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  font-family: "Georgia", serif;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.billing-bg ul {
+  list-style-type: none;
+}
+
+.bill-title {
+  text-align: center;
+  font-size: 30px;
+  color: #9f0606;
+  margin: 20px;
+}
+
+.billing-item {
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  margin: 50px;
+}
+.bill-cart {
+  margin: 40px;
+  padding-bottom: 20px;
+}
+
+.billing-item:hover {
+  border-color: #b0bec5;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+}
+
+.billing-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bill-amount {
+  font-size: 24px;
+  color: #e03a3a;
+}
+
+.bill-payment {
+  font-size: 18px;
+  color: #757575;
+}
+
+.bill-status {
+  font-size: 18px;
+  color: #4caf50;
+}
+
+.toggle-button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #e34242;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #e37777;
+  transform: translateY(-2px);
+}
+
+.patient-details-dropdown {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #e0f2f1;
+  border-radius: 8px;
+}
+
+.patient-details-dropdown h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #e61414;
+}
+
+.patient-details-dropdown p {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #060606;
+}

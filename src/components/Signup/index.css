@@ -1,0 +1,133 @@
+/* index.css */
+
+/* Background styling for the entire signup page */
+.signup-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(#d81838,white);
+    background-size: cover;
+  }
+ 
+  
+  /* Background styling for the form container */
+  .body-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the form */
+  .form-submit1 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  /* Container for input fields */
+  .signup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 10px;
+  }
+  
+  /* General styling for input fields */
+  .user-name1,
+  .email,
+  .password1,
+  .confirm-password {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-image: linear-gradient(#e35169,white);
+    color: black;
+    font-weight: bold;
+   
+  }
+  
+  /* Margin adjustment for the confirm password field */
+  .confirm-password {
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the show password checkbox */
+  .show-pass {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Checkbox styling */
+  .check-box {
+    margin-right: 8px;
+  }
+  
+  /* Label for the show password checkbox */
+  .show-password {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Container for the submit button */
+  .enter1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Styling for the submit button */
+  .submit_btn1 {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for the submit button */
+  .submit_btn1:hover {
+    background-color: #45a049;
+  }
+  
+  /* Styling for error messages */
+  .errorMsg1 {
+    color: #c91f19;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Styling for the sign-in link */
+  .sign-in1 {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  /* Link styling */
+  .sign-in1 a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Hover effect for the sign-in link */
+  .sign-in1 a:hover {
+    text-decoration: underline;
+  }
+  .role-element{
+    color: white;
+  }
+  .input-el-and-label-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  

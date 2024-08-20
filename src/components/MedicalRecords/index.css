@@ -1,0 +1,60 @@
+/* Container for the table with both horizontal and vertical scrollbars */
+.table-scrollable {
+    max-height: 500px;  /* Adjust the height as per your requirement */
+    overflow-y: auto;   /* Enables vertical scrollbar */
+    overflow-x: auto;   /* Enables horizontal scrollbar */
+    width: 100%;        /* Ensures the container takes up full width */
+    display: block;     /* Ensures the block-level container respects the max-height */
+    color: black;
+}
+.medical-bg{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(229, 201, 201);
+
+}
+.medical-title{
+    color: rgb(207, 8, 8);
+    padding: 10px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style for the table */
+.medical-records-table {
+    width: 100%; /* Ensures table takes full width */
+    border-collapse: collapse; /* Removes space between table cells */
+    min-width: 1200px; /* Forces horizontal scrollbar if table is wider than container */
+    margin: 20px;
+}
+
+.medical-records-table th, .medical-records-table td {
+    padding: 12px;          /* Padding inside each cell */
+    border: 1px solid #ddd; /* Border for table cells */
+    text-align: left;       /* Aligns text to the left */
+    font-size: 14px;        /* Font size for table text */
+    white-space: nowrap;    /* Prevents text wrapping in cells */
+}
+.medical-records-table td{
+    background-color: rgb(78, 73, 78);
+    color: rgb(234, 225, 225);
+}
+
+.medical-records-table th {
+    background-color: rgb(236, 26, 29); 
+    position: sticky;          
+    top: 0;                    
+    z-index: 1;
+    color: white;                
+}
+
+@media  (max-width:480px) {
+    .medical-title{
+        font-size: 15px;
+    }
+    .medical-records-table{
+        
+    }
+    
+}

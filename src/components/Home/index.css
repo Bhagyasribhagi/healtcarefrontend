@@ -1,0 +1,145 @@
+/* Navbar and logo styling */
+.home-bg {
+    display: flex;
+    flex-direction: column;
+    height: 76vh;
+    background-image: radial-gradient(white,#e1c1c6);
+    width: 100vw;
+   
+    background-image: url("https://res.cloudinary.com/dwc2npg5b/image/upload/v1723882363/AdobeStock_246942922_tu4erd.jpg");
+    background-size: cover;
+}
+
+.hr{
+    color: black;
+}
+.home-bt{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar {
+    width: 300px;
+    background-color: transparent;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 110%;
+    text-align: center;
+    
+    
+}
+
+.nav-links li {
+    margin: 15px 0;
+}
+
+.nav-links a {
+    color: rgb(15, 14, 14);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    width: 80%;
+    transition: background-color 0.3s;
+    background-color: transparent;
+    background-color: #f9f8f8;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.nav-links a:hover {
+    background-color: #d12121;
+}
+
+
+
+/* Main content styling */
+.body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+ /* Optional: Set background color */
+    color: #333; /* Default text color */
+    background-color: transparent;
+    background-image: linear-gradient(#d81838);
+    /* padding: 40px; */
+    border-radius: 30px;
+    margin: 50px;
+}
+
+.head {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.span {
+    /* Highlighted color */
+    font-style: italic;
+    
+    color: rgb(210, 21, 21);
+}
+
+.home-text {
+    font-size: 18px;
+    color: rgb(89, 83, 83);
+    max-width: 600px;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-style:italic;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .home-bg{
+        font-size: 15px;
+        height: 100vh;
+    }
+    .head{
+        font-size: 15px;
+    }
+    .text{
+        font-size: 10px;
+    }
+    .nav-links{
+        margin: 7px 0;
+    }
+    .nav-links a{
+        margin: 2px;
+        font-size: 10px;
+    }
+    .logo {
+        margin-bottom: 10px;
+        width: 100px;
+        background-color: transparent;
+    }
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        text-align: center;
+        
+    }
+    
+    
+}
+

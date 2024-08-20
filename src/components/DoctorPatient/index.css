@@ -1,0 +1,84 @@
+/* General Container */
+.patient-doctor-bg {
+  padding: 30px;
+  background-image: radial-gradient(white, #df9aa4);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+/* Title */
+.patient-doct-title {
+  font-size: 24px; 
+  color: rgb(143, 6, 6); 
+  font-weight: bold; 
+  text-align: center; 
+  margin: 20px 0; 
+  padding: 10px;
+  border-bottom: 2px solid #b811c4;
+  border-radius: 5px;
+  background-color: transparent; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Table Styles */
+.table-container {
+  width: 90%;
+  overflow-x: auto; 
+  border-radius: 20px;
+}
+
+.patient-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.patient-table th, .patient-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.patient-table th {
+  background-color: #e76b6b;
+  color: #333;
+}
+.patient-table td{
+  background-color: #f0e8e8;
+}
+
+.patient-table tr:nth-child(even) {
+  background-color: #edb2b2; 
+}
+
+.patient-table tr:hover {
+  background-color: #ecacac; 
+}
+
+/* Loading Text */
+.patient-doctor-bg p {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .patient-doct-title {
+    font-size: 20px; 
+    margin: 15px 0; 
+  }
+}
+
+@media (max-width: 480px) {
+  .patient-doct-title {
+    font-size: 18px; 
+    margin: 10px 0; 
+  }
+}

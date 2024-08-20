@@ -1,0 +1,142 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-bg-container {
+  background: url('https://res.cloudinary.com/dwc2npg5b/image/upload/v1723886409/healthcare-background-with-medical-symbols-hexagonal-frame_1017-26363_pnzflb.avif') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensures the container takes up the full height of the viewport */
+  width: 100vw; /* Ensures the container takes up the full width of the viewport */
+  margin: 0; /* Removes any default margin */
+  padding: 0; /* Removes any default padding */
+  overflow: hidden; /* Prevents scrolling issues */
+}
+
+
+/* Background Container */
+.login-bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f5eeed;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+
+}
+
+
+/* Form Container */
+.login-card-container {
+  width: 100%;
+  background-color:rgb(255, 255, 255);
+  padding: 50px;
+  border-radius: 10px;
+  border-color: #040404;
+}
+.login-card-container:hover{
+  background-color: antiquewhite;
+  
+}
+/* Input Fields */
+.input-el-and-label-container {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #151414;
+  display: block;
+  margin-bottom: 8px;
+  padding-right: 15px;
+}
+
+.username-input-element,
+.role-select-element {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e46e6e;
+  border-radius: 5px;
+  color: #040404;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  color: #040404;
+  background-color:transparent;
+
+}
+
+.username-input-element:focus,
+.role-select-element:focus {
+  border-color: #007bff;
+}
+.input-el-and-label-container{
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.role-select-element {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="#007bff" d="M2 0L0 2h4zM0 3l2 2 2-2z"/></svg>') no-repeat right 10px center/12px 12px;
+}
+
+/* Submit Button */
+.submit-btn-container {
+  margin-top: 10px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+.error{
+  color: red;
+}
+
+/* Error Message */
+.invalid-credentials {
+  color: #ff4d4d;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-bg-container {
+    padding: 15px;
+    max-width: 320px;
+  }
+
+  .submit-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,83 @@
+.span1 {
+    font-size: 40px;
+    color: #b811c4;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #283fd7, #e0281b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.admin-hello {
+    font-size: 30px;
+    color: #e82727;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.logout-btn{
+    background-color: #e82727;
+}
+
+.logout{
+    padding: 10px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:transparent;
+    border-radius: 2%;
+    text-align: center;
+    align-items: center;
+    color: rgb(250, 10, 10);
+    background-color:white;
+    
+}
+.logo-i {
+   
+    width: 150px;
+    background-color: transparent;
+  
+   
+}
+@media (max-width: 768px) {
+    
+    .logout{
+        padding: 10px;
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color:transparent;
+        border-radius: 2%;
+        text-align: center;
+        align-items: center;
+        color: rgb(248, 5, 5);
+        background-color: white;
+        
+    }
+    .admin-hello {
+        font-size: 10px;
+       
+        margin-bottom: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .logo-i {
+   
+        width: 100px;
+        background-color: transparent;
+        color: black;
+       
+    }
+    .span1 {
+        font-size: 20px;
+       
+        margin-left: 10px;
+    }
+    
+}
