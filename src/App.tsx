@@ -1,7 +1,6 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./components/Login"; // Assuming you have a Login component
 import SignUp from "./components/Signup"; // Import your SignUp component
@@ -43,7 +42,6 @@ function App() {
           <Route path="*" element={<NotFound/>}/>
         </Route>
 
-        {/* Add more routes as needed */}
       </Routes>
     </Router>
   );
